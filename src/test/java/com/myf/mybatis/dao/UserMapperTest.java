@@ -28,7 +28,7 @@ public class UserMapperTest {
         /*构建SqlSessionFactory*/
         SqlSessionFactory sqlSessionFactory=new SqlSessionFactoryBuilder().build(is);
         /*获取sqlSession*/
-        sqlSession=sqlSessionFactory.openSession();
+        sqlSession=sqlSessionFactory.openSession(true);
         this.userMapper=new UserDaoImpl(sqlSession);
 
     }

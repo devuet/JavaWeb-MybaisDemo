@@ -82,7 +82,7 @@ public class UserDaoTest {
 
     @Test
     public void testDeleteUserById() {
-        long id=1;
+        String id="1";
         this.userDao.deleteUserById(id);
     }
 }
