@@ -5,7 +5,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <!--根标签-->
 <configuration>
-    <properties resource="db.properties"></properties>
+    <properties resource="properties/db.properties"></properties>
     <environments default="test">
         <environment id="test">
             <transactionManager type="JDBC"></transactionManager>
@@ -26,10 +26,12 @@
             </dataSource>
         </environment>
     </environments>
+    <!--
     <mappers>
         <mapper resource="mappers/MyMapper.xml"/>
         <mapper resource="mappers/MyUserMapper.xml"/>
         <mapper resource="mappers/UserDaoMapper.xml"/>
         <mapper resource="mappers/OrderMapper.xml"/>
     </mappers>
+    -->
 </configuration>
