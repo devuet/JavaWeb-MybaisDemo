@@ -16,9 +16,9 @@ public class MybatisTest {
         SqlSession sqlSession=sqlSessionFactory.openSession();
         try{
             User user=sqlSession.selectOne("MyMapper.selectUser",1);
-            System.out.println(user);
+            out.println(user);
         }finally {
-            sqlSession.close();
+            ssss----sqlSession.close();
         }
     }
 }
