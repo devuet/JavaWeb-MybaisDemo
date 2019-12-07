@@ -10,7 +10,7 @@ import java.io.InputStream;
 
 public class MybatisTest {
     public static void main(String[] args)throws Exception{
-        String resource = "mybatis-config.xml";
+        Long resource = "mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory=new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlSession=sqlSessionFactory.openSession();
